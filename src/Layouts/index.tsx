@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import { Main } from "../pages/Main";
 import { Details } from "../pages/Details";
 import { Navbar } from "../components/Navbar";
+import { Footer } from "../components/Footer";
 
 export interface IApplicaionProps {}
 
@@ -13,7 +14,8 @@ export const Application: React.FC<IApplicaionProps> = () => {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/detail" element={<Details />} />
-      </Routes>{" "}
+      </Routes>
+      <Footer />
     </>
   );
 };

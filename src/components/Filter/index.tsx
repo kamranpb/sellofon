@@ -7,6 +7,7 @@ import { NumericFormatCustom } from "./textInput";
 import { RadioInput } from "./RadioInput";
 import { BRAND_LIST, CITIES_LIST, Phone_Memory_List } from "../../const";
 const options = ["bla", "bla", "bla", "bla", "bla"];
+
 export const FilterContainer = () => {
   interface FormData {
     brand: string;
@@ -21,7 +22,7 @@ export const FilterContainer = () => {
     console.log(data);
   };
 
-  const { handleSubmit, control, getValues, watch } = useForm<FormData>({
+  const { handleSubmit, control, watch } = useForm<FormData>({
     defaultValues: {
       status: "allOf",
     },

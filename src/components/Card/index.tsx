@@ -30,7 +30,23 @@ export const images = [
 ];
 //
 
-export const CardContainer = ({ maxW }: any) => {
+interface IProps {
+  name: string;
+  location: string;
+  price: string;
+  number: number;
+  date: string;
+  imgPath: string;
+}
+
+export const CardContainer = ({
+  name,
+  location,
+  price,
+  number,
+  date,
+  imgPath,
+}: IProps) => {
   const [isMobile, setIsMobile] = React.useState(false);
   const [isBookmark, setIsBookmark] = React.useState(false);
 
@@ -59,10 +75,9 @@ export const CardContainer = ({ maxW }: any) => {
   const handleStepChange = (step: number) => {
     setActiveStep(step);
   };
-  const textdf = "Apple iPhone 13 128 GB";
   return (
-    <Card sx={{ maxWidth: maxW, cursor: "pointer" }}>
-      <Box sx={{ maxWidth: 400, flexGrow: 1, position: "relative" }}>
+    <Card sx={{ cursor: "pointer", marginY: 2 }}>
+      <Box sx={{ maxWidth: 200, flexGrow: 1, position: "relative" }}>
         <IconButton
           aria-label="bookmark"
           sx={{
@@ -89,24 +104,19 @@ export const CardContainer = ({ maxW }: any) => {
           enableMouseEvents
           autoPlay
         >
-          {images.map((step, index) => (
-            <div key={index}>
-              {Math.abs(activeStep - index) <= 2 ? (
-                <Box
-                  component="img"
-                  sx={{
-                    height: 255,
-                    display: "block",
-                    maxWidth: 400,
-                    overflow: "hidden",
-                    width: "100%",
-                    objectFit: "cover",
-                  }}
-                  src={step.imgPath}
-                />
-              ) : null}
-            </div>
-          ))}
+          <div>
+            <Box
+              component="img"
+              sx={{
+                height: 255,
+                display: "block",
+                overflow: "hidden",
+                width: "100%",
+                objectFit: "cover",
+              }}
+              src={imgPath}
+            />
+          </div>
         </SwipeableViews>
         {isMobile && (
           <MobileStepper
@@ -137,16 +147,14 @@ export const CardContainer = ({ maxW }: any) => {
           position: "relative",
         }}
       >
-        <span className="text-base text-orange-600 font-bold">280 AZN</span>
+        <span className="text-base text-orange-600 font-bold">{price}</span>
         <span className="text-base font-semibold	">
-          {textdf.substring(0, 18)}...
+          {name.substring(0, 18)}...
         </span>
-        <span className="text-sm ">Bakı, Azərbaycan</span>
-        <span className="text-xs font-light	text-stone-500 mt-2">
-          12 sentyabr 2023
-        </span>
+        <span className="text-sm ">{location}</span>
+        <span className="text-xs font-light	text-stone-500 mt-2">{date}</span>
         <a
-          href={`http://wa.me/994${519291845}`}
+          href={`http://wa.me/994${number}`}
           className="absolute right-3 bottom-5 text-2xl text-yellow-600"
           target="_blank"
           rel="noreferrer"

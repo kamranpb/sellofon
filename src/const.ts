@@ -125,3 +125,79 @@ export const Phone_Memory_List = [
   "512 GB",
   "1 TB",
 ];
+
+export const CardMockData = [
+  {
+    id: 1,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTGMr4p8Wm_4i1yY3bEbUuUz32fof5k4ENrL3tcEuAlNAmXl_E43qrSSRFyvOIdjmLXeOU&usqp=CAU",
+    price: "290 AZN",
+    brand: "Iphone",
+    model: "14 Pro Max",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 555322312,
+    date: "12 Sentyabr 2023",
+  },
+  {
+    id: 2,
+    imgPath:
+      "https://www.digitaltrends.com/wp-content/uploads/2022/08/iPhone-SE-2022-Starlight-Back-in-Hand.jpg?p=1",
+    price: "290 AZN",
+    brand: "BlackBerry",
+    model: "Unknown",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 513542312,
+    date: "23 Oktyabr 2023",
+  },
+  {
+    id: 3,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38ka6n4SJwKxXzgkI3wkTAYaNkTY0z3GhCy7J8ILz7wVz5HzZ-VG60wEymFygWO77dRw&usqp=CAU",
+    price: "4567 AZN",
+    brand: "Samsung",
+    model: "A52",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 506532312,
+    date: "21 Dekabr 2023",
+  },
+  {
+    id: 4,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38ka6n4SJwKxXzgkI3wkTAYaNkTY0z3GhCy7J8ILz7wVz5HzZ-VG60wEymFygWO77dRw&usqp=CAU",
+    price: "4567 AZN",
+    brand: "Samsung",
+    model: "A52",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 506532312,
+    date: "21 Dekabr 2023",
+  },
+  {
+    id: 5,
+    imgPath:
+      "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS38ka6n4SJwKxXzgkI3wkTAYaNkTY0z3GhCy7J8ILz7wVz5HzZ-VG60wEymFygWO77dRw&usqp=CAU",
+    price: "4567 AZN",
+    brand: "Samsung",
+    model: "A52",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 506532312,
+    date: "21 Dekabr 2023",
+  },
+
+  {
+    id: 6,
+    imgPath:
+      "https://www.apple.com/newsroom/images/product/iphone/standard/Apple-iPhone-14-iPhone-14-Plus-hero-220907_Full-Bleed-Image.jpg.large.jpg",
+    price: "2345 AZN",
+    brand: "Iphone",
+    model: "13 Pro Max",
+    country: "Azerbaijan",
+    city: "Baku",
+    number: 101232312,
+    date: "20 Yanvar 2022",
+  },
+];
